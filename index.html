@@ -58,7 +58,7 @@
             <h4>
                 It's quick and easy
             </h4>
-            <div id="right">
+            <div>
                 <div class="name">
                     <input type="text" placeholder="First name">
                 </div>
@@ -99,7 +99,7 @@
                     <option value="23">23</option>
                     <option value="24">24</option>
                     <option value="25">25</option>
-                    <option value="26" selected="1">26</option>
+                    <option value="26" selected = "1">26</option>
                     <option value="27">27</option>
                     <option value="28">28</option>
                     <option value="29">29</option>
@@ -241,15 +241,21 @@
                     <option value="1905">1905</option>
                 </select>
 
-                <a title="Click for more information" role="button">
                     <div id = "birthday">Gender</div>
-                   <input type = "radio" name = "gender"/>
-                   <label>Female</label>
-                   <input type = "radio" name = "gender"/>
-                   <label>Male</label>
-                    <input type = "radio" name = "gender"/>
-                   <label>Custom</label>
-                    <a title="Click for more information" href="#" role="button">
+                    <span data-type="radio">
+                        <span>
+                   <input id = "female" type = "radio" value = "female" name = "gender"/>
+                   <label for = "female">Female</label>
+                   </span>
+                   <span>
+                   <input id = "male" type = "radio" value = "male" name = "gender"/>
+                   <label for = "male">Male</label>
+                   </span>
+                   <span>
+                    <input id = "custom" type = "radio" value = "custom" name = "gender"/>
+                   <label for = "custom">Custom</label>
+                   </span>
+                   </span>
 
 
                         <p>By clicking Sign Up, you agree to our <a href="/legal/terms/update" id="terms-link"
@@ -259,8 +265,7 @@
                                 Policy</a>. You may receive SMS notifications from us and can
                             opt out at any time.</p>
 
-                        <div class="_1lch"><button type="submit" class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v"
-                                name="websubmit" id="u_0_13">Sign Up</button>
+                        <div><button>Sign Up</button>
                         </div>
             </div>
         </div>
